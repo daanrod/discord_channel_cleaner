@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 
-
 TOKEN = "YOUR DISCORD BOT TOKEN"
 
 intents = discord.Intents.default()
@@ -9,6 +8,7 @@ intents.message_content = True
 intents.guilds = True
 intents.messages = True
 
+# Here you can set your prefix
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 
